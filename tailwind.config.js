@@ -1,3 +1,4 @@
+import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -7,10 +8,10 @@ export default {
         white: "#FFFFFF",
         black: "#000000",
         fund: "#F1ECEC",
-        yellow:"#FFFC00",
-        blue:"#0FADFF",
+        yellow: "#FFFC00",
+        blue: "#0FADFF",
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
 };
